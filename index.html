@@ -1,12 +1,228 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ma page perso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Ali Beddiaf - ATER at University of Bordeaux, LaBRI">
+    <title>Ali Beddiaf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Salut 👋</h1>
-  <p>Bienvenue sur ma page GitHub Pages.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AB</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Ali</span>
+                            <span class="title-line accent">Beddiaf</span>
+                        </h1>
+                        <p class="hero-subtitle">Dr. · ATER</p>
+                        <div class="hero-affiliation">
+                            <p>University of Bordeaux</p>
+                            <p>Laboratory LaBRI</p>
+                        </div>
+                        <div class="hero-description">
+                            <p>My research focuses on <strong>physically-based rendering</strong>, with particular emphasis on particle-based fluids, point-based objects, and light transport effects. I develop efficient rendering techniques for complex 3D graphics systems.</p>
+                            <p class="keywords"><em>Keywords:</em> rendering, ray tracing, point-based graphics, fluid simulation, GPU acceleration</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/alibeddiaf" target="_blank" class="social-link" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/alibeddiaf" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <div class="placeholder-text">Photo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                
+                <div class="publications-category">
+                    <h3 class="category-title">Journal Publications</h3>
+                    
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">J</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Physically-Based Rendering of Particle-Based Fluids with Light Transport Effects</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>3D Research, Springer</em>, 2018</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="publications-category">
+                    <h3 class="category-title">International Conferences</h3>
+                    
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">An improved splat-based ray tracing for point-based objects</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings ISPS'2015</em>, Alger, Algeria, 2015</p>
+                            <span class="pub-citations">Citations: 1</span>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Efficient accelerated ray tracing de point-based objects</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings ICMCS'2014</em>, Marrakech, Morocco, 2014</p>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Texture mapping approach for transforming arbitrary topology meshes to subdivision connectivity ones</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini, W. Puech</p>
+                            <p class="pub-venue"><em>Proceedings ICMCS'2011</em>, Ouarzazate, Morocco, 2011</p>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Interactive free form deformer for point-based objects by GPU acceleration</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini, W. Puech</p>
+                            <p class="pub-venue"><em>Proceedings ISPS'2011</em>, Alger, Algeria, 2011</p>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Topological synchronization mechanism for robust watermarking on 3D semi-regular meshes</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, W. Puech, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>IEEE ICME '2011</em>, Barcelona, Spain, 2011</p>
+                            <span class="pub-citations">Citations: 4</span>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">C</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Nouvelle approche interactive de déformations libres sur des objets 3D à base de points</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings CISC'2011</em>, Jijel, Algeria, 2011</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="publications-category">
+                    <h3 class="category-title">National Conferences</h3>
+                    
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">N</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Path tracing : quadrature numérique de Gauss</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings IGVA'2014</em>, Biskra, Algeria, 2014</p>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">N</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Towards accurate splat-based ray tracing de point-based</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings IGVA'2013</em>, Biskra, Algeria, 2013</p>
+                        </div>
+                    </article>
+
+                    <article class="publication-item">
+                        <div class="pub-thumbnail">
+                            <div class="pub-icon">N</div>
+                        </div>
+                        <div class="pub-content">
+                            <h4 class="pub-title">Tatouage hiérarchique et robuste d'objects 3D</h4>
+                            <p class="pub-authors"><strong>A. Beddiaf</strong>, W. Puech, M.C. Babahenini</p>
+                            <p class="pub-venue"><em>Proceedings SNIB'2010</em>, Biskra, Algeria, 2010</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:ali.beddiaf@u-bordeaux.fr">ali.beddiaf@u-bordeaux.fr</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Address</h3>
+                            <p>LaBRI - Laboratoire Bordelais de Recherche en Informatique<br>
+                            University of Bordeaux<br>
+                            Talence, France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ali Beddiaf. Template inspired by <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
