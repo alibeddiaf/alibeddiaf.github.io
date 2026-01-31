@@ -41,13 +41,13 @@
                             <p class="keywords"><em>Keywords:</em> rendering, ray tracing, point-based graphics, fluid simulation, GPU acceleration</p>
                         </div>
                         <div class="social-links">
-                            <a href="https://alibeddiaf.github.io" target="_blank" class="social-link" aria-label="GitHub">
+                            <a href="https://github.com/alibeddiaf" target="_blank" class="social-link" aria-label="GitHub">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="http://www.linkedin.com/in/ali-beddiaf-6281aa34" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <a href="https://linkedin.com/in/alibeddiaf" target="_blank" class="social-link" aria-label="LinkedIn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
@@ -58,9 +58,13 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="image-placeholder">
-                            <img src="images/photo.jpg" alt="Ali Beddiaf" style="width: 300px; height: 300px; object-fit: cover; border: 3px solid var(--accent-color);">
-                       </div>
+                        <!-- Option A: Si vous avez converti le PDF en image -->
+                        <img src="images/photo.jpg" alt="Ali Beddiaf" class="profile-photo">
+                        
+                        <!-- Option B: Si vous gardez le placeholder temporairement -->
+                        <!-- <div class="image-placeholder">
+                            <div class="placeholder-text">Photo</div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -74,13 +78,25 @@
                     <h3 class="category-title">Journal Publications</h3>
                     
                     <article class="publication-item">
-                        <div class="pub-thumbnail">
-                            <div class="pub-icon">J</div>
-                        </div>
+                        <a href="materials/pbr-fluids.html" class="pub-thumbnail-link">
+                            <div class="pub-thumbnail">
+                                <img src="images/publications/pbr-fluids.png" alt="PBR Fluids" class="pub-image">
+                                <div class="pub-overlay">
+                                    <span class="view-materials">View Materials</span>
+                                </div>
+                            </div>
+                        </a>
                         <div class="pub-content">
-                            <h4 class="pub-title">Physically-Based Rendering of Particle-Based Fluids with Light Transport Effects</h4>
+                            <h4 class="pub-title">
+                                <a href="materials/pbr-fluids.html" class="pub-title-link">Physically-Based Rendering of Particle-Based Fluids with Light Transport Effects</a>
+                            </h4>
                             <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
                             <p class="pub-venue"><em>3D Research, Springer</em>, 2018</p>
+                            <div class="pub-links">
+                                <a href="materials/pbr-fluids.html" class="pub-link">Materials</a>
+                                <a href="#" class="pub-link">PDF</a>
+                                <a href="#" class="pub-link">DOI</a>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -89,14 +105,25 @@
                     <h3 class="category-title">International Conferences</h3>
                     
                     <article class="publication-item">
-                        <div class="pub-thumbnail">
-                            <div class="pub-icon">C</div>
-                        </div>
+                        <a href="materials/splat-raytracing-2015.html" class="pub-thumbnail-link">
+                            <div class="pub-thumbnail">
+                                <img src="images/publications/splat-raytracing.png" alt="Splat-based Ray Tracing" class="pub-image">
+                                <div class="pub-overlay">
+                                    <span class="view-materials">View Materials</span>
+                                </div>
+                            </div>
+                        </a>
                         <div class="pub-content">
-                            <h4 class="pub-title">An improved splat-based ray tracing for point-based objects</h4>
+                            <h4 class="pub-title">
+                                <a href="materials/splat-raytracing-2015.html" class="pub-title-link">An improved splat-based ray tracing for point-based objects</a>
+                            </h4>
                             <p class="pub-authors"><strong>A. Beddiaf</strong>, M.C. Babahenini</p>
                             <p class="pub-venue"><em>Proceedings ISPS'2015</em>, Alger, Algeria, 2015</p>
                             <span class="pub-citations">Citations: 1</span>
+                            <div class="pub-links">
+                                <a href="materials/splat-raytracing-2015.html" class="pub-link">Materials</a>
+                                <a href="#" class="pub-link">PDF</a>
+                            </div>
                         </div>
                     </article>
 
@@ -203,7 +230,7 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <h3>Email</h3>
-                            <p><a href="mailto:ali.bediaf@u-bordeaux.fr">ali.bediaf@u-bordeaux.fr</a></p>
+                            <p><a href="/cdn-cgi/l/email-protection#7514191c5b171011111c1413350058171a07111014000d5b1307"><span class="__cf_email__" data-cfemail="c6a7aaafe8a4a3a2a2afa7a086b3eba4a9b4a2a3a7b3bee8a0b4">[email&#160;protected]</span></a></p>
                         </div>
                         <div class="contact-item">
                             <h3>Address</h3>
@@ -219,10 +246,4 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ali Beddiaf.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <p>&copy; 2026 Ali Beddiaf. Template inspired by <a href="https://github.com/j
